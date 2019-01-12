@@ -1,3 +1,5 @@
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
 # qmm-benchmark
 
 This is a benchmark for equivalence checking of quantum circuits using quantum Mealy machine [WLY19].
