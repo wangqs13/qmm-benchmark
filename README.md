@@ -16,42 +16,44 @@ See [WLY19] for more details.
 ## Data Format
 
 testXXX.data is a binary file, whose contents are listed below:
-> <dim, int>
 
-> <sigma, int>
-
-> <gamma, int>
-
-> <limit, int>
-
-> <eps, double>
-> for a in 0..sigma-1:
->     for i in 0..dim-1:
->         for j in 0..dim-1:
->             <unitary[a][i][j].real, double>
->             <unitary[a][i][j].imag, double>
-> for b in 0..sigma-1:
->     for i in 0..dim-1:
->         for j in 0..dim-1:
->             <measure[b][i][j].real, double>
->             <measure[b][i][j].imag, double>
-> for i in 0..dim-1:
->     for j in 0..dim-1:
->         <rho1[i][j].real, double>
->         <rho1[i][j].imag, double>
-> for i in 0..dim-1:
->     for j in 0..dim-1:
->         <rho2[i][j].real, double>
->         <rho2[i][j].imag, double>
+```
+<dim, int>
+<sigma, int>
+<gamma, int>
+<limit, int>
+<eps, double>
+for a in 0..sigma-1:
+    for i in 0..dim-1:
+        for j in 0..dim-1:
+            <unitary[a][i][j].real, double>
+            <unitary[a][i][j].imag, double>
+for b in 0..sigma-1:
+    for i in 0..dim-1:
+        for j in 0..dim-1:
+            <measure[b][i][j].real, double>
+            <measure[b][i][j].imag, double>
+for i in 0..dim-1:
+    for j in 0..dim-1:
+        <rho1[i][j].real, double>
+        <rho1[i][j].imag, double>
+for i in 0..dim-1:
+    for j in 0..dim-1:
+        <rho2[i][j].real, double>
+        <rho2[i][j].imag, double>
+```
 
 The offsets of the first few data are shown below for calibration:
-> offset        <content, type>
->  0000	        <dim, int>
->  0004	        <sigma, int>
->  0008	        <gamma, int>
->  000c	        <limit, int>
->  0010	        <eps, double>
->  ....
+
+```
+offset        <content, type>
+ 0000	        <dim, int>
+ 0004	        <sigma, int>
+ 0008	        <gamma, int>
+ 000c	        <limit, int>
+ 0010	        <eps, double>
+ ....
+```
 
 ## Examples
 
