@@ -13,6 +13,8 @@ A quantum Mealy machine (QMM) is a 5-tuple <a href="https://www.codecogs.com/eqn
 
 See [WLY19] for more details.
 
+The benchmark is for equivalence checking of two states in a QMM. That is, given a QMM <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{M}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{M}" title="\mathcal{M}" /></a> and two states <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_1" title="\rho_1" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_2" title="\rho_2" /></a>, decide whether <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_1&space;\sim&space;\rho_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_1&space;\sim&space;\rho_2" title="\rho_1 \sim \rho_2" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_1&space;\sim_k&space;\rho_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_1&space;\sim_k&space;\rho_2" title="\rho_1 \sim_k \rho_2" /></a> for some <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k" title="k" /></a>.
+
 ## Data Format
 
 testXXX.data is a binary file, whose contents are listed below:
