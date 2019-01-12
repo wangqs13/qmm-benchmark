@@ -1,5 +1,3 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-
 # qmm-benchmark
 
 This is a benchmark for equivalence checking of quantum circuits using quantum Mealy machine [WLY19].
@@ -19,9 +17,13 @@ See [WLY19] for more details.
 
 testXXX.data is a binary file, whose contents are listed below:
 > <dim, int>
+
 > <sigma, int>
+
 > <gamma, int>
+
 > <limit, int>
+
 > <eps, double>
 > for a in 0..sigma-1:
 >     for i in 0..dim-1:
