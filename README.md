@@ -63,42 +63,9 @@ We select test002 as an illustrative example, in which case:
 * gamma = 2.
 * limit = -1.
 * eps = 1e-8.
-* $\text{unitary[0]} = \frac 1 {\sqrt2} \begin{bmatrix} 
-  1 & 0 & 1 & 0 \\
-  0 & 1 & 0 & 1 \\
-  1 & 0 & -1 & 0 \\
-  0 & 1 & 0 & -1
-\end{bmatrix}$,
-$\text{unitary[1]} = \begin{bmatrix} 
-  1 & 0 & 0 & 0 \\
-  0 & 1 & 0 & 0 \\
-  0 & 0 & 0 & 1 \\
-  0 & 0 & 1 & 0
-\end{bmatrix}$.
-* $\text{measure[0]} = \begin{bmatrix} 
-  1 & 0 & 0 & 0 \\
-  0 & 1 & 0 & 0 \\
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0
-\end{bmatrix}$,
-$\text{measure[1]} = \begin{bmatrix} 
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 1 & 0 \\
-  0 & 0 & 0 & 1
-\end{bmatrix}$.
-* $\text{rho1} = \begin{bmatrix} 
-  1 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0
-\end{bmatrix}$,
-$\text{rho2} = \begin{bmatrix} 
-  0 & 0 & 0 & 0 \\
-  0 & 1 & 0 & 0 \\
-  0 & 0 & 0 & 0 \\
-  0 & 0 & 0 & 0
-\end{bmatrix}$.
+* <a href="https://www.codecogs.com/eqnedit.php?latex=\text{unitary[0]}&space;=&space;\frac&space;1&space;{\sqrt2}&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;1&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;1&space;\\&space;1&space;&&space;0&space;&&space;-1&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;-1&space;\end{bmatrix},\text{unitary[1]}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;\end{bmatrix}." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\text{unitary[0]}&space;=&space;\frac&space;1&space;{\sqrt2}&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;1&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;1&space;\\&space;1&space;&&space;0&space;&&space;-1&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;-1&space;\end{bmatrix},\text{unitary[1]}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;\end{bmatrix}." title="\text{unitary[0]} = \frac 1 {\sqrt2} \begin{bmatrix} 1 & 0 & 1 & 0 \\ 0 & 1 & 0 & 1 \\ 1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \end{bmatrix},\text{unitary[1]} = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}." /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=$\text{measure[0]}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\end{bmatrix},&space;\text{measure[1]}&space;=&space;\begin{bmatrix}&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;\end{bmatrix}.$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\text{measure[0]}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\end{bmatrix},&space;\text{measure[1]}&space;=&space;\begin{bmatrix}&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;1&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;1&space;\end{bmatrix}.$" title="$\text{measure[0]} = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}, \text{measure[1]} = \begin{bmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}.$" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=$\text{rho1}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\end{bmatrix},&space;\text{rho2}&space;=&space;\begin{bmatrix}&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\end{bmatrix}.$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$\text{rho1}&space;=&space;\begin{bmatrix}&space;1&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\end{bmatrix},&space;\text{rho2}&space;=&space;\begin{bmatrix}&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;1&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\\&space;0&space;&&space;0&space;&&space;0&space;&&space;0&space;\end{bmatrix}.$" title="$\text{rho1} = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}, \text{rho2} = \begin{bmatrix} 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \end{bmatrix}.$" /></a>
 
 ## References
 
