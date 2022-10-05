@@ -81,4 +81,4 @@ The hard-coded data is seen in "datafactory.h".
 ## References
 
 [WLY21] Qisheng Wang, Junyi Liu and Mingsheng Ying. Equivalence checking of quantum finite-state machines. 
-*Journal of Computer and System Sciences*, 116: 1-21, 2021. [arXiv:1901.02173](https://arxiv.org/pdf/1901.02173.pdf).
+*Journal of Computer and System Sciences*, 116: 1-21, 2021. [arXiv:1901.02173](https://arxiv.org/pdf/1901.02173.pdf). [doi:10.1016/j.jcss.2020.08.004](https://doi.org/10.1016/j.jcss.2020.08.004).
