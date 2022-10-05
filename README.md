@@ -1,6 +1,6 @@
 # qmm-benchmark
 
-This is a benchmark for equivalence checking of quantum circuits using quantum Mealy machine [WLY19].
+This is a benchmark for equivalence checking of quantum circuits using quantum Mealy machine [WLY21].
 
 ## Basic Definitions
 
@@ -11,7 +11,7 @@ A quantum Mealy machine (QMM) is a 5-tuple <a href="https://www.codecogs.com/eqn
 * <a href="https://www.codecogs.com/eqnedit.php?latex=U&space;=&space;\{&space;U_\sigma:&space;\sigma&space;\in&space;\Sigma&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U&space;=&space;\{&space;U_\sigma:&space;\sigma&space;\in&space;\Sigma&space;\}" title="U = \{ U_\sigma: \sigma \in \Sigma \}" /></a> is a set of unitary operators. For each <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma&space;\in&space;\Sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma&space;\in&space;\Sigma" title="\sigma \in \Sigma" /></a>, <a href="https://www.codecogs.com/eqnedit.php?latex=U_\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?U_\sigma" title="U_\sigma" /></a> is a unitary operator on <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{H}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{H}" title="\mathcal{H}" /></a>; and
 * <a href="https://www.codecogs.com/eqnedit.php?latex=M&space;=&space;\{&space;M_m:&space;m&space;\in&space;\Gamma&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?M&space;=&space;\{&space;M_m:&space;m&space;\in&space;\Gamma&space;\}" title="M = \{ M_m: m \in \Gamma \}" /></a> is a quantum measurement in <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{H}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{H}" title="\mathcal{H}" /></a>, that is, <a href="https://www.codecogs.com/eqnedit.php?latex=M_m" target="_blank"><img src="https://latex.codecogs.com/gif.latex?M_m" title="M_m" /></a> is a linear operator on <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{H}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{H}" title="\mathcal{H}" /></a> for each <a href="https://www.codecogs.com/eqnedit.php?latex=m&space;\in&space;\Gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m&space;\in&space;\Gamma" title="m \in \Gamma" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\sum_m&space;M_m^\dag&space;M_m&space;=&space;I" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum_m&space;M_m^\dag&space;M_m&space;=&space;I" title="\sum_m M_m^\dag M_m = I" /></a>.
 
-See [WLY19] for more details.
+See [WLY21] for more details.
 
 The benchmark is for equivalence checking of two states in a QMM. That is, given a QMM <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{M}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{M}" title="\mathcal{M}" /></a> and two states <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_1" title="\rho_1" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_2" title="\rho_2" /></a>, decide whether <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_1&space;\sim&space;\rho_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_1&space;\sim&space;\rho_2" title="\rho_1 \sim \rho_2" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_1&space;\sim_k&space;\rho_2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_1&space;\sim_k&space;\rho_2" title="\rho_1 \sim_k \rho_2" /></a> for some <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k" title="k" /></a>.
 
@@ -72,7 +72,13 @@ We select test002 as an illustrative example, in which case:
 “limit” denotes <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k" title="k" /></a>.
 It is noted that for the case “limit = -1”, it means that no such <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k" title="k" /></a> is required, or equivalently <a href="https://www.codecogs.com/eqnedit.php?latex=k&space;\geq&space;(\dim&space;\mathcal{H})^2-1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k&space;\geq&space;(\dim&space;\mathcal{H})^2-1" title="k \geq (\dim \mathcal{H})^2-1" /></a> holds.
 
+## Source Code
+
+The implementation of checking equivalence of QMM is the file ``qmm.h''. 
+
+The hard-coded data is seen in ``datafactory.h''.
+
 ## References
 
-[WLY19] Q. S. Wang, J. Y. Liu and M. S. Ying. Equivalence Checking of Quantum Finite-State
-Machines. In: [arXiv:1901.02173](https://arxiv.org/pdf/1901.02173.pdf).
+[WLY21] Qisheng Wang, Junyi Liu and Mingsheng Ying. Equivalence checking of quantum finite-state machines. 
+*Journal of Computer and System Sciences*, 116: 1--21, 2021. [arXiv:1901.02173](https://arxiv.org/pdf/1901.02173.pdf).
