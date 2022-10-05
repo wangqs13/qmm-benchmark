@@ -74,11 +74,11 @@ It is noted that for the case “limit = -1”, it means that no such <a href="h
 
 ## Source Code
 
-The implementation of checking equivalence of QMM is the file ``qmm.h''. 
+The implementation of checking equivalence of QMM is the file "qmm.h". 
 
-The hard-coded data is seen in ``datafactory.h''.
+The hard-coded data is seen in "datafactory.h".
 
 ## References
 
 [WLY21] Qisheng Wang, Junyi Liu and Mingsheng Ying. Equivalence checking of quantum finite-state machines. 
-*Journal of Computer and System Sciences*, 116: 1--21, 2021. [arXiv:1901.02173](https://arxiv.org/pdf/1901.02173.pdf).
+*Journal of Computer and System Sciences*, 116: 1-21, 2021. [arXiv:1901.02173](https://arxiv.org/pdf/1901.02173.pdf).
